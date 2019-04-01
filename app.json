@@ -1,0 +1,11 @@
+{
+  "name": "RNStyleGuide",
+  "displayName": "React Native Style Guide",
+  "description": "Reusable react native components",
+  "ios": {
+    "supportsTablet": true
+  },
+  "android": {
+    "package": "com.rnstyleguide"
+  }
+}
