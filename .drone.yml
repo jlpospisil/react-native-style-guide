@@ -1,8 +1,11 @@
 kind: pipeline
 name: default
+
+workspace:
+  base:
 steps:
   - name: test
-      image: node
+      image: node:latest
       commands:
         - npm install
         - npm lint
