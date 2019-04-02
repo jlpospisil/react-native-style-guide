@@ -1,0 +1,14 @@
+kind: pipeline
+name: default
+steps:
+  - name: test
+      image: node
+      commands:
+        - npm install
+        - npm lint
+        - npm test
+trigger:
+  branch:
+    - master
+  event:
+    - pull-request
