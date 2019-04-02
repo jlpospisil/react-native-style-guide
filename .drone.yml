@@ -10,7 +10,5 @@ steps:
   - npm test
 
 when:
-  branch:
-  - master
   event:
   - pull_request
