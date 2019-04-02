@@ -7,4 +7,3 @@ module.exports = {
     '<rootDir>/jest.setup.js',
   ],
 };
-
