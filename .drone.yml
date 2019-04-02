@@ -13,4 +13,4 @@ trigger:
   branch:
     - master
   event:
-    - pull-request
+    - pull_request
