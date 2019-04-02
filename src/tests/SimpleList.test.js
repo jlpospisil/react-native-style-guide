@@ -16,3 +16,4 @@ test('throws error', () => {
   const tree = () => <SimpleList />;
   expect(tree).toThrowError('Failed prop type');
 });
+
