@@ -6,7 +6,10 @@
     "storybook": "storybook start -p 7007",
     "ios": "react-native run-ios",
     "android": "react-native run-android",
-    "bundler": "react-native start --reset-cache"
+    "bundler": "react-native start --reset-cache",
+    "lint": "./node_modules/.bin/eslint src/. ./storybook/.",
+    "lint:fix": "./node_modules/.bin/eslint src/. ./storybook/. --fix",
+    "test": "jest"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -25,7 +28,7 @@
     "@storybook/react-native": "^3.4.12",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.5.0",
+    "babel-jest": "^24.6.0",
     "babel-runtime": "^6.26.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -33,7 +36,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-native": "^3.6.0",
-    "jest": "^24.5.0",
+    "jest": "^24.6.0",
     "metro-react-native-babel-preset": "^0.53.1",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6"
