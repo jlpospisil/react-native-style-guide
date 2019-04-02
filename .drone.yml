@@ -1,8 +1,6 @@
 kind: pipeline
 name: default
 
-workspace:
-  base:
 steps:
   - name: test
       image: node:latest
@@ -10,6 +8,7 @@ steps:
         - npm install
         - npm lint
         - npm test
+
 trigger:
   branch:
     - master
