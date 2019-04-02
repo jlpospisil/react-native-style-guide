@@ -9,8 +9,6 @@ steps:
         - npm lint
         - npm test
 
-trigger:
-  branch:
-    - master
+when:
   event:
     - pull_request
