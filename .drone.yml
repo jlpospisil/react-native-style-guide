@@ -8,8 +8,6 @@ steps:
   - npm install
   - npm lint
   - npm test
-  volumes:
-  - /var/run/docker.sock:/var/run/docker.sock
 
 when:
   event:
