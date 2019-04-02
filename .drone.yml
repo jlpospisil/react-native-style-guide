@@ -2,15 +2,15 @@ kind: pipeline
 name: default
 
 steps:
-  - name: test
-      image: node:latest
-      commands:
-        - npm install
-        - npm lint
-        - npm test
+- name: test
+  image: node:latest
+  commands:
+  - npm install
+  - npm lint
+  - npm test
 
 when:
   branch:
-    - master
+  - master
   event:
-    - pull_request
+  - pull_request
