@@ -3,8 +3,14 @@ name: default
 
 steps:
   - name: test
-      image: node
+      image: node:latest
       commands:
         - npm install
         - npm lint
         - npm test
+
+when:
+  branch:
+    - master
+  event:
+    - pull_request
