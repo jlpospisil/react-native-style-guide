@@ -154,5 +154,11 @@
     "max-nested-callbacks": 0,       // specify the maximum depth callbacks can be nested (off by default)
     "one-var": 0,                    // allow just one var statement per function (off by default)
     "wrap-regex": 0                 // require regex literals to be wrapped in parentheses (off by default)
-  }
+  },
+  "overrides": [{
+    "files": ["*.test.js"],
+    "rules": {
+
+    }
+  }]
 }
