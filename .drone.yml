@@ -17,7 +17,7 @@ steps:
   commands:
   - npm run test
 
-when:
+trigger:
   branch:
   - master
   event:
