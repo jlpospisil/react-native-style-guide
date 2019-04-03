@@ -4,15 +4,15 @@ name: default
 steps:
 - name: install
   image: node:latest
-  command: npm install
+  commands: npm install
 
 - name: lint
   image: node:latest
-  command: npm run lint
+  commands: npm run lint
 
 - name: test
   image: node:latest
-  command: npm run test
+  commands: npm run test
 
 when:
   branch:
