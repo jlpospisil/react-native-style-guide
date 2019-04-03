@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FlatList, RefreshControl } from 'react-native';
-import { ListItem } from 'react-native-elements';
+import ListItem from './ListItem';
 
-const SimpleList = (props) => {
+const List = (props) => {
   const {
     items, refreshing, onRefresh, ...listProps
   } = props;
@@ -25,7 +25,7 @@ const SimpleList = (props) => {
   );
 };
 
-SimpleList.propTypes = {
+List.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.object
   ).isRequired,
@@ -35,11 +35,11 @@ SimpleList.propTypes = {
   onRefresh: PropTypes.func,
 };
 
-SimpleList.defaultProps = {
+List.defaultProps = {
   keyExtractor: (item, index) => index.toString(),
   renderItem: ({ item }) => <ListItem {...item} />, // eslint-disable-line react/prop-types
   refreshing: false,
   onRefresh: null,
 };
 
-export default SimpleList;
+export default List;

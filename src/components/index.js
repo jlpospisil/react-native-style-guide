@@ -1,2 +1,2 @@
 export { default as Container } from './container';
-export * from './lists';
+export * from './list';
