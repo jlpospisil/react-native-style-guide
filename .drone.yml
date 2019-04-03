@@ -2,12 +2,17 @@ kind: pipeline
 name: default
 
 steps:
+- name: install
+  image: node:latest
+  command: npm install
+
+- name: lint
+  image: node:latest
+  command: npm run lint
+
 - name: test
   image: node:latest
-  commands:
-  - npm install
-  - npm run lint
-  - npm run test
+  command: npm run test
 
 when:
   branch:
