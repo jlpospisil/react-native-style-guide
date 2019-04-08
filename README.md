@@ -16,3 +16,11 @@ Starting Storybook
     npm run ios
         OR
     npm run android
+
+Notes
+---
+* If re-creating ios folder, you will have to re-link react-native-vector-icons:
+    
+    ```
+    react-native link react-native-vector-icons
+    ```

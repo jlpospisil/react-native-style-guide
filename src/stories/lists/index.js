@@ -97,4 +97,10 @@ storiesOf('List', module)
         },
       }))}
     />
+  ))
+  .add('Selectable list', () => (
+    <List
+      selectable
+      items={listItems}
+    />
   ));
