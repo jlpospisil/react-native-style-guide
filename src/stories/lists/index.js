@@ -22,6 +22,12 @@ const buttonStyle = {
   marginLeft: 2,
 };
 
+const leftButtonContainerStyle = {
+  flex: 1,
+  justifyContent: 'flex-end',
+  alignItems: 'flex-end',
+};
+
 const Button = (props) => {
   const { text, color } = props; // eslint-disable-line react/prop-types
   return (
@@ -78,17 +84,17 @@ storiesOf('List', module)
         },
       }))}
     />
+  ))
+  .add('Swipeable left buttons', () => (
+    <List
+      items={listItems.map(i => ({
+        ...i,
+        swipeable: {
+          leftButtons: swipeableButtons,
+          leftButtonWidth: buttonStyle.width + 2,
+          leftContainerStyle: leftButtonContainerStyle,
+          leftButtonContainerStyle,
+        },
+      }))}
+    />
   ));
-
-// TODO: why are left buttons showing off screen?
-// .add('Swipeable left buttons', () => (
-//   <List
-//     items={listItems.map(i => ({
-//       ...i,
-//       swipeable: {
-//         leftButtons: swipeableButtons,
-//         leftButtonWidth: buttonStyle.width + 2,
-//       },
-//     }))}
-//   />
-// ));
