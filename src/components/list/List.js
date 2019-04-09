@@ -5,13 +5,12 @@ import ListItem from './ListItem';
 
 const List = (props) => {
   const {
-    items, refreshing, selectable, renderItem, onRefresh, ...listProps
+    items, refreshing, selectable, onRefresh, ...listProps
   } = props;
-  // eslint-disable-next-line react/prop-types
-  const defaultRenderItem = ({ item }) => <ListItem selectable={selectable} {...item} />;
+  const data = items.map(i => ({ selectable, ...i }));
   return (
     <FlatList
-      data={items}
+      data={data}
       contentContainerStyle={{ flexGrow: 1 }}
       style={{
         alignSelf: 'stretch',
@@ -22,7 +21,6 @@ const List = (props) => {
           onRefresh={onRefresh}
         />
       ) : null}
-      renderItem={renderItem || defaultRenderItem}
       {...listProps}
     />
   );
@@ -41,7 +39,7 @@ List.propTypes = {
 
 List.defaultProps = {
   keyExtractor: (item, index) => index.toString(),
-  renderItem: null, // eslint-disable-line react/prop-types
+  renderItem: ({ item }) => <ListItem {...item} />, // eslint-disable-line react/prop-types
   refreshing: false,
   selectable: false,
   onRefresh: null,

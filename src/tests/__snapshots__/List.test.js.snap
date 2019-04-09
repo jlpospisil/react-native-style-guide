@@ -10,22 +10,27 @@ exports[`matches snapshot 1`] = `
   data={
     Array [
       Object {
+        "selectable": false,
         "subtitle": "Here is list item number 0",
         "title": "Item 0",
       },
       Object {
+        "selectable": false,
         "subtitle": "Here is list item number 1",
         "title": "Item 1",
       },
       Object {
+        "selectable": false,
         "subtitle": "Here is list item number 2",
         "title": "Item 2",
       },
       Object {
+        "selectable": false,
         "subtitle": "Here is list item number 3",
         "title": "Item 3",
       },
       Object {
+        "selectable": false,
         "subtitle": "Here is list item number 4",
         "title": "Item 4",
       },
@@ -65,214 +70,121 @@ exports[`matches snapshot 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View
-        leftActionActivationDistance={125}
-        leftActionReleaseAnimationConfig={null}
-        leftActionReleaseAnimationFn={null}
-        leftButtonWidth={75}
-        leftButtonsActivationDistance={75}
-        leftButtonsCloseReleaseAnimationConfig={null}
-        leftButtonsCloseReleaseAnimationFn={null}
-        leftButtonsOpenReleaseAnimationConfig={null}
-        leftButtonsOpenReleaseAnimationFn={null}
-        onLayout={[Function]}
-        onLeftActionActivate={[Function]}
-        onLeftActionComplete={[Function]}
-        onLeftActionDeactivate={[Function]}
-        onLeftActionRelease={[Function]}
-        onLeftButtonsActivate={[Function]}
-        onLeftButtonsCloseComplete={[Function]}
-        onLeftButtonsCloseRelease={[Function]}
-        onLeftButtonsDeactivate={[Function]}
-        onLeftButtonsOpenComplete={[Function]}
-        onLeftButtonsOpenRelease={[Function]}
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onPanAnimatedValueRef={[Function]}
-        onRef={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onRightActionActivate={[Function]}
-        onRightActionComplete={[Function]}
-        onRightActionDeactivate={[Function]}
-        onRightActionRelease={[Function]}
-        onRightButtonsActivate={[Function]}
-        onRightButtonsCloseComplete={[Function]}
-        onRightButtonsCloseRelease={[Function]}
-        onRightButtonsDeactivate={[Function]}
-        onRightButtonsOpenComplete={[Function]}
-        onRightButtonsOpenRelease={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        onSwipeComplete={[Function]}
-        onSwipeMove={[Function]}
-        onSwipeRelease={[Function]}
-        onSwipeStart={[Function]}
-        rightActionActivationDistance={125}
-        rightActionReleaseAnimationConfig={null}
-        rightActionReleaseAnimationFn={null}
-        rightButtonWidth={75}
-        rightButtonsActivationDistance={75}
-        rightButtonsCloseReleaseAnimationConfig={null}
-        rightButtonsCloseReleaseAnimationFn={null}
-        rightButtonsOpenReleaseAnimationConfig={null}
-        rightButtonsOpenReleaseAnimationFn={null}
-        style={
-          Array [
-            Object {
-              "flexDirection": "row",
-            },
-            undefined,
-          ]
-        }
-        swipeReleaseAnimationConfig={
-          Object {
-            "duration": 250,
-            "easing": [Function],
-            "toValue": Object {
-              "x": 0,
-              "y": 0,
-            },
-          }
-        }
-        swipeReleaseAnimationFn={[Function]}
-        swipeStartMinDistance={15}
-      >
+      <View>
         <View
           style={
             Object {
-              "flex": 1,
-              "transform": Array [
-                Object {
-                  "translateX": 0,
-                },
-              ],
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderColor": "#bcbbc1",
+              "flexDirection": "row",
+              "padding": 14,
             }
           }
         >
-          <View>
-            <View
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "white",
-                  "borderColor": "#bcbbc1",
-                  "flexDirection": "row",
-                  "padding": 14,
+                  "backgroundColor": "transparent",
+                  "fontSize": 17,
+                }
+              }
+              testID="listItemTitle"
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "justifyContent": "center",
-                  }
+              Item 0
+            </Text>
+            <Text
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "fontSize": 15,
                 }
-              >
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 17,
-                    }
-                  }
-                  testID="listItemTitle"
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+              }
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
                       },
-                    }
-                  }
-                >
-                  Item 0
-                </Text>
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 15,
-                    }
-                  }
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
                       },
-                    }
-                  }
-                >
-                  Here is list item number 0
-                </Text>
-              </View>
-            </View>
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
+                }
+              }
+            >
+              Here is list item number 0
+            </Text>
           </View>
         </View>
       </View>
@@ -281,214 +193,121 @@ exports[`matches snapshot 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View
-        leftActionActivationDistance={125}
-        leftActionReleaseAnimationConfig={null}
-        leftActionReleaseAnimationFn={null}
-        leftButtonWidth={75}
-        leftButtonsActivationDistance={75}
-        leftButtonsCloseReleaseAnimationConfig={null}
-        leftButtonsCloseReleaseAnimationFn={null}
-        leftButtonsOpenReleaseAnimationConfig={null}
-        leftButtonsOpenReleaseAnimationFn={null}
-        onLayout={[Function]}
-        onLeftActionActivate={[Function]}
-        onLeftActionComplete={[Function]}
-        onLeftActionDeactivate={[Function]}
-        onLeftActionRelease={[Function]}
-        onLeftButtonsActivate={[Function]}
-        onLeftButtonsCloseComplete={[Function]}
-        onLeftButtonsCloseRelease={[Function]}
-        onLeftButtonsDeactivate={[Function]}
-        onLeftButtonsOpenComplete={[Function]}
-        onLeftButtonsOpenRelease={[Function]}
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onPanAnimatedValueRef={[Function]}
-        onRef={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onRightActionActivate={[Function]}
-        onRightActionComplete={[Function]}
-        onRightActionDeactivate={[Function]}
-        onRightActionRelease={[Function]}
-        onRightButtonsActivate={[Function]}
-        onRightButtonsCloseComplete={[Function]}
-        onRightButtonsCloseRelease={[Function]}
-        onRightButtonsDeactivate={[Function]}
-        onRightButtonsOpenComplete={[Function]}
-        onRightButtonsOpenRelease={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        onSwipeComplete={[Function]}
-        onSwipeMove={[Function]}
-        onSwipeRelease={[Function]}
-        onSwipeStart={[Function]}
-        rightActionActivationDistance={125}
-        rightActionReleaseAnimationConfig={null}
-        rightActionReleaseAnimationFn={null}
-        rightButtonWidth={75}
-        rightButtonsActivationDistance={75}
-        rightButtonsCloseReleaseAnimationConfig={null}
-        rightButtonsCloseReleaseAnimationFn={null}
-        rightButtonsOpenReleaseAnimationConfig={null}
-        rightButtonsOpenReleaseAnimationFn={null}
-        style={
-          Array [
-            Object {
-              "flexDirection": "row",
-            },
-            undefined,
-          ]
-        }
-        swipeReleaseAnimationConfig={
-          Object {
-            "duration": 250,
-            "easing": [Function],
-            "toValue": Object {
-              "x": 0,
-              "y": 0,
-            },
-          }
-        }
-        swipeReleaseAnimationFn={[Function]}
-        swipeStartMinDistance={15}
-      >
+      <View>
         <View
           style={
             Object {
-              "flex": 1,
-              "transform": Array [
-                Object {
-                  "translateX": 0,
-                },
-              ],
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderColor": "#bcbbc1",
+              "flexDirection": "row",
+              "padding": 14,
             }
           }
         >
-          <View>
-            <View
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "white",
-                  "borderColor": "#bcbbc1",
-                  "flexDirection": "row",
-                  "padding": 14,
+                  "backgroundColor": "transparent",
+                  "fontSize": 17,
+                }
+              }
+              testID="listItemTitle"
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "justifyContent": "center",
-                  }
+              Item 1
+            </Text>
+            <Text
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "fontSize": 15,
                 }
-              >
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 17,
-                    }
-                  }
-                  testID="listItemTitle"
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+              }
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
                       },
-                    }
-                  }
-                >
-                  Item 1
-                </Text>
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 15,
-                    }
-                  }
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
                       },
-                    }
-                  }
-                >
-                  Here is list item number 1
-                </Text>
-              </View>
-            </View>
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
+                }
+              }
+            >
+              Here is list item number 1
+            </Text>
           </View>
         </View>
       </View>
@@ -497,214 +316,121 @@ exports[`matches snapshot 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View
-        leftActionActivationDistance={125}
-        leftActionReleaseAnimationConfig={null}
-        leftActionReleaseAnimationFn={null}
-        leftButtonWidth={75}
-        leftButtonsActivationDistance={75}
-        leftButtonsCloseReleaseAnimationConfig={null}
-        leftButtonsCloseReleaseAnimationFn={null}
-        leftButtonsOpenReleaseAnimationConfig={null}
-        leftButtonsOpenReleaseAnimationFn={null}
-        onLayout={[Function]}
-        onLeftActionActivate={[Function]}
-        onLeftActionComplete={[Function]}
-        onLeftActionDeactivate={[Function]}
-        onLeftActionRelease={[Function]}
-        onLeftButtonsActivate={[Function]}
-        onLeftButtonsCloseComplete={[Function]}
-        onLeftButtonsCloseRelease={[Function]}
-        onLeftButtonsDeactivate={[Function]}
-        onLeftButtonsOpenComplete={[Function]}
-        onLeftButtonsOpenRelease={[Function]}
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onPanAnimatedValueRef={[Function]}
-        onRef={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onRightActionActivate={[Function]}
-        onRightActionComplete={[Function]}
-        onRightActionDeactivate={[Function]}
-        onRightActionRelease={[Function]}
-        onRightButtonsActivate={[Function]}
-        onRightButtonsCloseComplete={[Function]}
-        onRightButtonsCloseRelease={[Function]}
-        onRightButtonsDeactivate={[Function]}
-        onRightButtonsOpenComplete={[Function]}
-        onRightButtonsOpenRelease={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        onSwipeComplete={[Function]}
-        onSwipeMove={[Function]}
-        onSwipeRelease={[Function]}
-        onSwipeStart={[Function]}
-        rightActionActivationDistance={125}
-        rightActionReleaseAnimationConfig={null}
-        rightActionReleaseAnimationFn={null}
-        rightButtonWidth={75}
-        rightButtonsActivationDistance={75}
-        rightButtonsCloseReleaseAnimationConfig={null}
-        rightButtonsCloseReleaseAnimationFn={null}
-        rightButtonsOpenReleaseAnimationConfig={null}
-        rightButtonsOpenReleaseAnimationFn={null}
-        style={
-          Array [
-            Object {
-              "flexDirection": "row",
-            },
-            undefined,
-          ]
-        }
-        swipeReleaseAnimationConfig={
-          Object {
-            "duration": 250,
-            "easing": [Function],
-            "toValue": Object {
-              "x": 0,
-              "y": 0,
-            },
-          }
-        }
-        swipeReleaseAnimationFn={[Function]}
-        swipeStartMinDistance={15}
-      >
+      <View>
         <View
           style={
             Object {
-              "flex": 1,
-              "transform": Array [
-                Object {
-                  "translateX": 0,
-                },
-              ],
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderColor": "#bcbbc1",
+              "flexDirection": "row",
+              "padding": 14,
             }
           }
         >
-          <View>
-            <View
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "white",
-                  "borderColor": "#bcbbc1",
-                  "flexDirection": "row",
-                  "padding": 14,
+                  "backgroundColor": "transparent",
+                  "fontSize": 17,
+                }
+              }
+              testID="listItemTitle"
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "justifyContent": "center",
-                  }
+              Item 2
+            </Text>
+            <Text
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "fontSize": 15,
                 }
-              >
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 17,
-                    }
-                  }
-                  testID="listItemTitle"
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+              }
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
                       },
-                    }
-                  }
-                >
-                  Item 2
-                </Text>
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 15,
-                    }
-                  }
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
                       },
-                    }
-                  }
-                >
-                  Here is list item number 2
-                </Text>
-              </View>
-            </View>
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
+                }
+              }
+            >
+              Here is list item number 2
+            </Text>
           </View>
         </View>
       </View>
@@ -713,214 +439,121 @@ exports[`matches snapshot 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View
-        leftActionActivationDistance={125}
-        leftActionReleaseAnimationConfig={null}
-        leftActionReleaseAnimationFn={null}
-        leftButtonWidth={75}
-        leftButtonsActivationDistance={75}
-        leftButtonsCloseReleaseAnimationConfig={null}
-        leftButtonsCloseReleaseAnimationFn={null}
-        leftButtonsOpenReleaseAnimationConfig={null}
-        leftButtonsOpenReleaseAnimationFn={null}
-        onLayout={[Function]}
-        onLeftActionActivate={[Function]}
-        onLeftActionComplete={[Function]}
-        onLeftActionDeactivate={[Function]}
-        onLeftActionRelease={[Function]}
-        onLeftButtonsActivate={[Function]}
-        onLeftButtonsCloseComplete={[Function]}
-        onLeftButtonsCloseRelease={[Function]}
-        onLeftButtonsDeactivate={[Function]}
-        onLeftButtonsOpenComplete={[Function]}
-        onLeftButtonsOpenRelease={[Function]}
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onPanAnimatedValueRef={[Function]}
-        onRef={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onRightActionActivate={[Function]}
-        onRightActionComplete={[Function]}
-        onRightActionDeactivate={[Function]}
-        onRightActionRelease={[Function]}
-        onRightButtonsActivate={[Function]}
-        onRightButtonsCloseComplete={[Function]}
-        onRightButtonsCloseRelease={[Function]}
-        onRightButtonsDeactivate={[Function]}
-        onRightButtonsOpenComplete={[Function]}
-        onRightButtonsOpenRelease={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        onSwipeComplete={[Function]}
-        onSwipeMove={[Function]}
-        onSwipeRelease={[Function]}
-        onSwipeStart={[Function]}
-        rightActionActivationDistance={125}
-        rightActionReleaseAnimationConfig={null}
-        rightActionReleaseAnimationFn={null}
-        rightButtonWidth={75}
-        rightButtonsActivationDistance={75}
-        rightButtonsCloseReleaseAnimationConfig={null}
-        rightButtonsCloseReleaseAnimationFn={null}
-        rightButtonsOpenReleaseAnimationConfig={null}
-        rightButtonsOpenReleaseAnimationFn={null}
-        style={
-          Array [
-            Object {
-              "flexDirection": "row",
-            },
-            undefined,
-          ]
-        }
-        swipeReleaseAnimationConfig={
-          Object {
-            "duration": 250,
-            "easing": [Function],
-            "toValue": Object {
-              "x": 0,
-              "y": 0,
-            },
-          }
-        }
-        swipeReleaseAnimationFn={[Function]}
-        swipeStartMinDistance={15}
-      >
+      <View>
         <View
           style={
             Object {
-              "flex": 1,
-              "transform": Array [
-                Object {
-                  "translateX": 0,
-                },
-              ],
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderColor": "#bcbbc1",
+              "flexDirection": "row",
+              "padding": 14,
             }
           }
         >
-          <View>
-            <View
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "white",
-                  "borderColor": "#bcbbc1",
-                  "flexDirection": "row",
-                  "padding": 14,
+                  "backgroundColor": "transparent",
+                  "fontSize": 17,
+                }
+              }
+              testID="listItemTitle"
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "justifyContent": "center",
-                  }
+              Item 3
+            </Text>
+            <Text
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "fontSize": 15,
                 }
-              >
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 17,
-                    }
-                  }
-                  testID="listItemTitle"
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+              }
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
                       },
-                    }
-                  }
-                >
-                  Item 3
-                </Text>
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 15,
-                    }
-                  }
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
                       },
-                    }
-                  }
-                >
-                  Here is list item number 3
-                </Text>
-              </View>
-            </View>
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
+                }
+              }
+            >
+              Here is list item number 3
+            </Text>
           </View>
         </View>
       </View>
@@ -929,214 +562,121 @@ exports[`matches snapshot 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View
-        leftActionActivationDistance={125}
-        leftActionReleaseAnimationConfig={null}
-        leftActionReleaseAnimationFn={null}
-        leftButtonWidth={75}
-        leftButtonsActivationDistance={75}
-        leftButtonsCloseReleaseAnimationConfig={null}
-        leftButtonsCloseReleaseAnimationFn={null}
-        leftButtonsOpenReleaseAnimationConfig={null}
-        leftButtonsOpenReleaseAnimationFn={null}
-        onLayout={[Function]}
-        onLeftActionActivate={[Function]}
-        onLeftActionComplete={[Function]}
-        onLeftActionDeactivate={[Function]}
-        onLeftActionRelease={[Function]}
-        onLeftButtonsActivate={[Function]}
-        onLeftButtonsCloseComplete={[Function]}
-        onLeftButtonsCloseRelease={[Function]}
-        onLeftButtonsDeactivate={[Function]}
-        onLeftButtonsOpenComplete={[Function]}
-        onLeftButtonsOpenRelease={[Function]}
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onPanAnimatedValueRef={[Function]}
-        onRef={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onRightActionActivate={[Function]}
-        onRightActionComplete={[Function]}
-        onRightActionDeactivate={[Function]}
-        onRightActionRelease={[Function]}
-        onRightButtonsActivate={[Function]}
-        onRightButtonsCloseComplete={[Function]}
-        onRightButtonsCloseRelease={[Function]}
-        onRightButtonsDeactivate={[Function]}
-        onRightButtonsOpenComplete={[Function]}
-        onRightButtonsOpenRelease={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        onSwipeComplete={[Function]}
-        onSwipeMove={[Function]}
-        onSwipeRelease={[Function]}
-        onSwipeStart={[Function]}
-        rightActionActivationDistance={125}
-        rightActionReleaseAnimationConfig={null}
-        rightActionReleaseAnimationFn={null}
-        rightButtonWidth={75}
-        rightButtonsActivationDistance={75}
-        rightButtonsCloseReleaseAnimationConfig={null}
-        rightButtonsCloseReleaseAnimationFn={null}
-        rightButtonsOpenReleaseAnimationConfig={null}
-        rightButtonsOpenReleaseAnimationFn={null}
-        style={
-          Array [
-            Object {
-              "flexDirection": "row",
-            },
-            undefined,
-          ]
-        }
-        swipeReleaseAnimationConfig={
-          Object {
-            "duration": 250,
-            "easing": [Function],
-            "toValue": Object {
-              "x": 0,
-              "y": 0,
-            },
-          }
-        }
-        swipeReleaseAnimationFn={[Function]}
-        swipeStartMinDistance={15}
-      >
+      <View>
         <View
           style={
             Object {
-              "flex": 1,
-              "transform": Array [
-                Object {
-                  "translateX": 0,
-                },
-              ],
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderColor": "#bcbbc1",
+              "flexDirection": "row",
+              "padding": 14,
             }
           }
         >
-          <View>
-            <View
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "white",
-                  "borderColor": "#bcbbc1",
-                  "flexDirection": "row",
-                  "padding": 14,
+                  "backgroundColor": "transparent",
+                  "fontSize": 17,
+                }
+              }
+              testID="listItemTitle"
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "flex": 1,
-                    "justifyContent": "center",
-                  }
+              Item 4
+            </Text>
+            <Text
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "fontSize": 15,
                 }
-              >
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 17,
-                    }
-                  }
-                  testID="listItemTitle"
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+              }
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
                       },
-                    }
-                  }
-                >
-                  Item 4
-                </Text>
-                <Text
-                  style={
-                    Object {
-                      "backgroundColor": "transparent",
-                      "fontSize": 15,
-                    }
-                  }
-                  theme={
-                    Object {
-                      "colors": Object {
-                        "disabled": "hsl(208, 8%, 90%)",
-                        "divider": "#bcbbc1",
-                        "error": "#ff190c",
-                        "grey0": "#393e42",
-                        "grey1": "#43484d",
-                        "grey2": "#5e6977",
-                        "grey3": "#86939e",
-                        "grey4": "#bdc6cf",
-                        "grey5": "#e1e8ee",
-                        "greyOutline": "#bbb",
-                        "platform": Object {
-                          "android": Object {
-                            "error": "#f44336",
-                            "primary": "#2196f3",
-                            "secondary": "#9C27B0",
-                            "success": "#4caf50",
-                            "warning": "#ffeb3b",
-                          },
-                          "ios": Object {
-                            "error": "#ff3b30",
-                            "primary": "#007aff",
-                            "secondary": "#5856d6",
-                            "success": "#4cd964",
-                            "warning": "#ffcc00",
-                          },
-                        },
-                        "primary": "#2089dc",
-                        "searchBg": "#303337",
-                        "secondary": "#8F0CE8",
-                        "success": "#52c41a",
-                        "warning": "#faad14",
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
                       },
-                    }
-                  }
-                >
-                  Here is list item number 4
-                </Text>
-              </View>
-            </View>
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
+                }
+              }
+            >
+              Here is list item number 4
+            </Text>
           </View>
         </View>
       </View>

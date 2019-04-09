@@ -4,19 +4,26 @@ import { ListItem as ListItemComponent } from 'react-native-elements';
 import Swipeable from 'react-native-swipeable';
 
 const ListItem = (props) => {
-  const { selectable, swipeable, ...listItemProps } = props;
+  const {
+    selected, selectable, swipeable, ...listItemProps
+  } = props;
+  let leftIcon = null;
+
+  if (selectable) {
+    leftIcon = {
+      type: 'material-community',
+      name: selected ? 'check-circle' : 'circle-outline',
+    };
+  }
+
   const item = (
     <ListItemComponent
-      leftIcon={selectable ? { name: 'check-circle' } : null}
+      leftIcon={leftIcon}
       {...listItemProps}
     />
   );
 
-  // TODO: only show selection checkboxes if 1 or more items are selected
-  // TODO: implement first selection on long press
-  // TODO: track and emit selected items
-
-  if (typeof swipeable === 'object') {
+  if (swipeable !== null && typeof swipeable === 'object') {
     return (
       <Swipeable {...swipeable}>
         {item}
@@ -28,11 +35,13 @@ const ListItem = (props) => {
 };
 
 ListItem.propTypes = {
+  selected: PropTypes.bool,
   selectable: PropTypes.bool,
   swipeable: PropTypes.object,
 };
 
 ListItem.defaultProps = {
+  selected: false,
   selectable: false,
   swipeable: null,
 };

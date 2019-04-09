@@ -98,9 +98,15 @@ storiesOf('List', module)
       }))}
     />
   ))
-  .add('Selectable list', () => (
-    <List
-      selectable
-      items={listItems}
-    />
-  ));
+  .add('Selectable list', () => {
+    const selectedItems = [2, 4];
+    return (
+      <List
+        selectable
+        items={listItems.map((item, index) => ({
+          ...item,
+          selected: selectedItems.includes(index),
+        }))}
+      />
+    );
+  });
