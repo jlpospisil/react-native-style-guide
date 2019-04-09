@@ -4,10 +4,26 @@ import { ListItem as ListItemComponent } from 'react-native-elements';
 import Swipeable from 'react-native-swipeable';
 
 const ListItem = (props) => {
-  const { swipeable, ...listItemProps } = props;
-  const item = <ListItemComponent {...listItemProps} />;
+  const {
+    selected, selectable, swipeable, ...listItemProps
+  } = props;
+  let leftIcon = null;
 
-  if (typeof swipeable === 'object') {
+  if (selectable) {
+    leftIcon = {
+      type: 'material-community',
+      name: selected ? 'check-circle' : 'circle-outline',
+    };
+  }
+
+  const item = (
+    <ListItemComponent
+      leftIcon={leftIcon}
+      {...listItemProps}
+    />
+  );
+
+  if (swipeable !== null && typeof swipeable === 'object') {
     return (
       <Swipeable {...swipeable}>
         {item}
@@ -19,10 +35,14 @@ const ListItem = (props) => {
 };
 
 ListItem.propTypes = {
+  selected: PropTypes.bool,
+  selectable: PropTypes.bool,
   swipeable: PropTypes.object,
 };
 
 ListItem.defaultProps = {
+  selected: false,
+  selectable: false,
   swipeable: null,
 };
 
